@@ -358,11 +358,18 @@ footer{text-align:center;padding:16px;font-size:10px;color:var(--muted);opacity:
           <div class="stat-box"><div class="num">7 Hrs</div><div class="lbl">Content</div></div>
           <div class="stat-box"><div class="num">Lifetime</div><div class="lbl">Access</div></div>
         </div>
-          <div class="pricing-row">
-  <div class="new-price" style="font-size:32px;font-weight:bold;color:#00ff88;">
-    ₹99 Only
-  </div>
-          </div>
+        <div class="pricing-row">
+          <span class="old-price">₹999</span>
+          <span class="off-badge">UP TO 94% OFF</span>
+        </div>
+        <div class="new-price" id="new-price-en">₹—</div>
+        <div class="price-note" id="price-note-en" style="display:none">🎉 Your exclusive price! Valid today only.</div>
+        <button class="unlock-btn" id="unlockBtn-en" onclick="revealPrice('en')">🔓 &nbsp;Tap to Unlock Today's Discount</button>
+        <div class="timer-bar">
+          <span class="fire">🔥</span>
+          <span class="timer-txt">Offer expires in &nbsp;<span id="countdown">10:00</span></span>
+        </div>
+      </div>
 
       <!-- Features -->
       <div class="card">
@@ -412,17 +419,19 @@ footer{text-align:center;padding:16px;font-size:10px;color:var(--muted);opacity:
           <div class="stat-box"><div class="num">4.9★</div><div class="lbl">रेटिंग</div></div>
           <div class="stat-box"><div class="num">7 घंटे</div><div class="lbl">कंटेंट</div></div>
           <div class="stat-box"><div class="num">लाइफटाइम</div><div class="lbl">एक्सेस</div></div>
+        </div>
         <div class="pricing-row">
-  <span class="old-price">₹999</span>
-  <span class="off-badge">UP TO 94% OFF</span>
-</div>
-<div class="only 99₹" id="only 99₹">₹—</div>
-<div class="only 99₹" id="only 99₹" style="display:none">🎉 Your exclusive price! Valid today only.</div>
-<button class="unlock-btn" id="unlockBtn-en" onclick="revealPrice('en')">🔓 &nbsp;Tap to Unlock Today's Discount</button>
-<div class="timer-bar">
-  <span class="fire">🔥</span>
-  <span class="timer-txt">Offer expires in &nbsp;<span id="countdown">10:00</span></span>
-</div>
+          <span class="old-price">₹999</span>
+          <span class="off-badge">94% तक छूट</span>
+        </div>
+        <div class="new-price" id="new-price-hi">₹—</div>
+        <div class="price-note" id="price-note-hi" style="display:none">🎉 आपकी एक्सक्लूसिव कीमत! सिर्फ आज के लिए।</div>
+        <button class="unlock-btn" id="unlockBtn-hi" onclick="revealPrice('hi')">🔓 &nbsp;आज की छूट अनलॉक करें</button>
+        <div class="timer-bar">
+          <span class="fire">🔥</span>
+          <span class="timer-txt">ऑफर समाप्त होगा &nbsp;<span id="countdown-hi">10:00</span></span>
+        </div>
+      </div>
       <div class="card hi-text">
         <div class="section-title">📚 आप क्या सीखेंगे</div>
         <div class="feature-grid">
@@ -459,11 +468,11 @@ footer{text-align:center;padding:16px;font-size:10px;color:var(--muted);opacity:
         </div>
         <div class="pricing-row">
           <span class="old-price">₹999</span>
-          <span class="off-badge">94% వరకు డిస్కౌంట్</span>
+          <span class="off-badge">90% వరకు డిస్కౌంట్</span>
         </div>
         <div class="new-price" id="new-price-te">₹—</div>
         <div class="price-note" id="price-note-te" style="display:none">🎉 మీ ప్రత్యేక ధర! ఈరోజు మాత్రమే చెల్లుబాటు.</div>
-        <button class="unlock-btn" id="unlockBtn-te" onclick="revealPrice('te')">🔓 &nbsp;ఈరోజు డిస్కౌంట్ అన్‌లాక్ చేయండి</button>
+        <button class="unlock-btn" id="unlockBtn-te" onclick="only 99₹">🔓 &nbsp;ఈరోజు డిస్కౌంట్ అన్‌లాక్ చేయండి</button>
         <div class="timer-bar">
           <span class="fire">🔥</span>
           <span class="timer-txt">ఆఫర్ ముగియడానికి &nbsp;<span id="countdown-te">10:00</span></span>
@@ -704,4 +713,4 @@ function copyUPI(){
 })();
 </script>
 </body>
-          </html>
+</html>
