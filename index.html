@@ -358,7 +358,17 @@ footer{text-align:center;padding:16px;font-size:10px;color:var(--muted);opacity:
           <div class="stat-box"><div class="num">7 Hrs</div><div class="lbl">Content</div></div>
           <div class="stat-box"><div class="num">Lifetime</div><div class="lbl">Access</div></div>
         </div>
-        <div class="new-price">₹99 Only</div>
+          <div class="pricing-row">
+  <span class="old-price">₹999</span>
+  <span class="off-badge">UP TO 94% OFF</span>
+</div>
+<div class="new-price" id="new-price-en">₹—</div>
+<div class="price-note" id="price-note-en" style="display:none">🎉 Your exclusive price! Valid today only.</div>
+<button class="unlock-btn" id="unlockBtn-en" onclick="revealPrice('en')">🔓 &nbsp;Tap to Unlock Today's Discount</button>
+<div class="timer-bar">
+  <span class="fire">🔥</span>
+  <span class="timer-txt">Offer expires in &nbsp;<span id="countdown">10:00</span></span>
+</div>
 
       <!-- Features -->
       <div class="card">
